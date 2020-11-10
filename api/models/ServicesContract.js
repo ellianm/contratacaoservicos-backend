@@ -27,6 +27,9 @@ module.exports = {
       type: 'string',
       defaultsTo:'0'
     },
+    avaliationObs: {
+      type: 'string'
+    },
     action: {
       type: 'boolean'
     },
