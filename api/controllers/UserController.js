@@ -36,7 +36,7 @@ module.exports = {
       if (uploadedFiles.length === 0) {
         return res.badRequest('No file was uploaded');
       }
-      var baseUrl = "http://localhost:1337";
+      var baseUrl = sails.config.appUrl;
       User.update(req.param('id'), {
         avatarUrl: require('util').format('%s/user/avatar/%s', baseUrl, req.param('id')),
         avatarFd: '.tmp/uploads/' + uploadedFiles[0].fd
