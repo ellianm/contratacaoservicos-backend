@@ -41,6 +41,9 @@ module.exports = {
     },
     client: {
       model: 'user'
+    },
+    object: {
+      type: 'json'
     }
   }
 };
