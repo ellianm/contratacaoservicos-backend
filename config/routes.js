@@ -34,6 +34,24 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
+  },
+  'GET /user': {
+    view: '403'
+  },
+  'DELETE /user': {
+    view: '403'
+  },
+  'DELETE /user/:id': {
+    view: '403'
+  },
+  'GET /servicesContract': {
+    view: '403'
+  },
+  'DELETE /servicesContract': {
+    view: '403'
+  },
+  'DELETE /servicesContract/:id': {
+    view: '403'
   }
 
   /***************************************************************************
